@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### **Fitness Tracker App**
 
-## Getting Started
+A simple fitness tracking application built using **Next.js**. The app includes the following features:
 
-First, run the development server:
+- **My Progress Page**: 
+  - Displays steps, calories burned, and workouts completed using progress rings.
+  - Shows walking patterns (hourly steps), sleep patterns (weekly hours), and weekly progress in an interactive dashboard.
+- **Friends Page**:
+  - Displays a list of friends and their progress (steps, calories, and workouts).
+  - Includes hover effects for better visualization.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+### **Features**
+
+1. **Real-Time Visualizations**:
+   - Progress rings to track progress against goals.
+   - Bar and line charts for activity patterns.
+2. **Interactive Design**:
+   - Hover effects for better user engagement.
+3. **Modular Components**:
+   - Reusable components for charts and progress tracking.
+
+---
+
+### **Technologies Used**
+
+- **Next.js** (Framework)
+- **React Chart.js 2** (Charts and visualizations)
+- **Tailwind CSS** (Styling)
+
+---
+
+### **How to Run Locally**
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/fitness-tracker.git
+   cd fitness-tracker
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Open the app**:
+   - Go to `http://localhost:3000` in your browser.
+
+---
+
+### **Pages**
+
+1. **`/` - My Progress Page**:
+   - View personal progress, walking patterns, sleep patterns, and weekly overview.
+2. **`/friends` - Friends Progress Page**:
+   - View friends' progress with interactive hover effects.
+
+---
+
+### **Folder Structure**
+
+```
+src/
+├── app/
+│   ├── page.tsx          # Home page (My Progress)
+│   ├── friends/page.tsx  # Friends page
+├── components/
+│   ├── ProgressRing.tsx  # Progress ring component
+│   ├── BarChart.tsx      # Bar chart component
+│   ├── LineChart.tsx     # Line chart component
+│   ├── CalendarGrid.tsx  # Weekly overview component
+│   └── FriendsList.tsx   # Friends list component
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Future Enhancements**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Add backend integration for real-time data updates.
+- Enable user authentication and personalized data.
+- Improve chart interactivity and tooltips.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Let me know if you'd like to refine the README further! 🚀
